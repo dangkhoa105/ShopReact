@@ -23,12 +23,8 @@ export default class Contact extends Component{
         const { styleContact, header, iconStyle, viewMap, viewTitle, viewRow, imageStyle, textStyle, textStyle1, viewRowBottom } = styles;
         return(
             <View style={styleContact}>
-                <View style={header}>
-                    <TouchableOpacity onPress={this.goBack.bind(this)}>
-                        <Image style={iconStyle} source={back} />
-                    </TouchableOpacity>
-                </View>
-                <ElevatedView elevation={5} style={viewMap}>
+               
+                {/* <ElevatedView elevation={5} style={viewMap}>
                     <MapView style={{width:350,height:200}}
                         initialRegion={{
                             latitude: 10.870645,
@@ -37,12 +33,12 @@ export default class Contact extends Component{
                             longitudeDelta: 0.0421,
                         }}
                     >
-                    {/* <MapView.Marker
+                    <MapView.Marker
                         coordinate={{ latitude: 10.870645, longitude: 106.803424 }}
                         title="University of Information Technology"
-                    /> */}
+                    />
                     </MapView>
-                </ElevatedView>
+                </ElevatedView> */}
                 <ElevatedView elevation={5} style={viewTitle}>
                     <View style={viewRow}>
                         <Image source={location} style={imageStyle}/>

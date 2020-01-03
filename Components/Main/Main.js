@@ -25,7 +25,7 @@ class Main extends Component {
     this.props.navigation.openDrawer();
   }
   goSearch(){
-    this.props.navigation.navigate('SEARCH');
+    this.props.navigation.navigate('FormSearch');
   }
   goCart(){
     this.props.navigation.navigate('CART');

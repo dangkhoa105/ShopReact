@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, Dimensions, Image, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, Dimensions, Image, TouchableOpacity, TextInput } from 'react-native';
 import { connect } from 'react-redux';
 import { searchProduct } from '../../Redux/Reducer/CreateAction';
+import search from '../../Redux/API/search';
 import { Icon } from 'react-native-elements'
 import SearchBar from 'react-native-search-bar';
 import colors from '../../Design/Color'
@@ -11,29 +12,45 @@ import iconMenu from '../../Image/icon-menu.png';
 import { Button } from 'native-base';
 
 class Header extends Component{
+    constructor(props){
+        super(props);
+        this.state={
+            contentSearch:'',
+        }
+    }
+    _search(){
+        const {contentSearch} = this.state;
+        search(contentSearch)
+        .then(arrproduct => 
+            this.props.searchProduct(arrproduct)
+        )
+        .catch(err => this._searchFail())
+    }
     render(){
-        const { header, headerTop, hearderSearch, imageMenu, imageCart } = styles;
+        const { header, headerTop, hearderSearch, imageMenu, imageCart, textinput } = styles;
         return(
             <View style={header}>
                 <View style={headerTop}>
-                    <Icon
+                    {/* <Icon
                         name='sc-telegram'
                         type='evilicon'
                         color='#ffffff'
                         size={45}
                         onPress={this.props.onOpen} 
-                    />
+                    /> */}
                     <TouchableOpacity onPress={this.props.onOpen}>
                         <Image source={iconMenu} style={imageMenu} />
                     </TouchableOpacity>             
                     <View style={hearderSearch}>                                                                     
-                        <SearchBar
-                            //lightTheme
-                            //platform="android"
+                        <TextInput
                             underlineColorAndroid='transparent'
-                            placeholder="Search..."                      
-                            onFocus={this.props.goSear}                                                      
-                        /> 
+                            style={textinput}
+                            placeholder="What do you want to buy ?"
+                            value={this.state.contentSearch}
+                            onChangeText={(contentSearch)=>{this.setState({contentSearch})}}
+                            onFocus={ this.props.goSear}
+                            onSubmitEditing={this._search.bind(this)}
+                        />
                     </View>
                     <View style={imageCart}>
                         <IconCart goCar={this.props.goCart}/>   

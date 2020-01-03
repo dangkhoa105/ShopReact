@@ -11,7 +11,7 @@ import colors from '../../Design/Color.js';
 
 import back from '../../Image/back_white.png';
 
-const url = "http://169.254.151.175:80/app/images/product/";
+const url = "http://192.168.1.33:5000/app/images/product/";
 
 class Cart extends Component {
   goDetail(product) {

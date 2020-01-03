@@ -1,4 +1,4 @@
-const URL = "http://169.254.151.175:80/app/order_history.php";
+const URL = "http://192.168.1.33:5000/app/order_history.php";
 const orderOld = (token ) =>{
     return fetch(URL, {
         method: 'POST',

@@ -35,6 +35,9 @@ export const SIDEMAIN = createDrawerNavigator({
     FormContact:{
         screen: Contact
     },
+    FormSearch : {
+        screen: Search
+    }
 },
 {
     initialRouteName: 'First',

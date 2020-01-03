@@ -1,7 +1,7 @@
 import saveToken from './saveToken';
 import getToken from './getToken';
 
-const URL = "http://169.254.151.175:80/app/refresh_token.php";
+const URL = "http://192.168.1.33:5000/app/refresh_token.php";
 // const RefreshToken = (token) => {
 //     return fetch(URL, {
 //         method:'POST',

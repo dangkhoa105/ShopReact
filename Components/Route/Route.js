@@ -81,21 +81,21 @@ export const TABNAV = createBottomTabNavigator(
                     (<Text style={focused ? styles.iconTextActive : styles.iconText}>Cart</Text>),
             }                
         },
-        tabSearch: {
-            screen: ROUTE_SEARCH,
-            navigationOptions:{
-                tabBarIcon: ({ focused, tintColor }) => {
-                    if (focused) {
-                        return (<Image source={iconSearch1} style={styles.icon} />)
-                    }
-                    else {
-                        return (<Image source={iconSearch} style={styles.icon} />)
-                    }
-                },
-                tabBarLabel: ({focused, tintColor})=> 
-                    (<Text style={focused ? styles.iconTextActive : styles.iconText}>Search</Text>),
-            }
-        },
+        // tabSearch: {
+        //     screen: ROUTE_SEARCH,
+        //     navigationOptions:{
+        //         tabBarIcon: ({ focused, tintColor }) => {
+        //             if (focused) {
+        //                 return (<Image source={iconSearch1} style={styles.icon} />)
+        //             }
+        //             else {
+        //                 return (<Image source={iconSearch} style={styles.icon} />)
+        //             }
+        //         },
+        //         tabBarLabel: ({focused, tintColor})=> 
+        //             (<Text style={focused ? styles.iconTextActive : styles.iconText}>Search</Text>),
+        //     }
+        // },
         tabContact: {
             screen: ROUTE_CONTACT,
             navigationOptions:{
