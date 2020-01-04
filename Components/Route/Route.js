@@ -29,12 +29,12 @@ const styles=StyleSheet.create({
         height: height / 25,
     },
     iconText: {
-        paddingLeft: width/12,
+        paddingLeft: width/8,
         color: colors.tabUI,
         fontSize: width / 33,
     },
     iconTextActive: {
-        paddingLeft: width/12,
+        paddingLeft: width/8,
         color: colors.headerUI,
         fontSize: width / 33,
     },
