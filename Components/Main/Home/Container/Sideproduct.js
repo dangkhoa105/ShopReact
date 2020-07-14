@@ -26,7 +26,7 @@ class Sideproduct extends Component {
                     <TouchableOpacity ref={'Midi'} onPress={()=>this.props.goProduct(e)} key={e.id} >{/* dùng để gán tên cho TouchableOpacity */}
                       <ImageBackground
                         style={image}
-                        source={{ uri: `http://192.168.1.33:5000/app/images/type/${e.image}` }}
+                        source={{ uri: `http://localhost:5000/app/images/type/${e.image}` }}
                       >
                         <Text style={titleText}>{e.name}</Text>
                       </ImageBackground>

@@ -1,5 +1,5 @@
 
-const URL = "http://192.168.1.33:5000/app/";
+const URL = "http://localhost:5000/app/";
 
 export function getTypes() {
     return fetch(URL)

@@ -1,4 +1,4 @@
-const URL = "http://192.168.1.33:5000/app/register.php";
+const URL = "http://localhost:5000/app/register.php";
 const Register = (email, name, password) => {
     return fetch(URL, {
         method: 'POST',

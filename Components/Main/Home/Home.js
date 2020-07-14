@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Dimensions, ScrollView} from 'react-native';
+import { StyleSheet, Dimensions, ScrollView,SafeAreaView} from 'react-native';
 import { connect } from 'react-redux';
 import { getDataTypesThunk, getTopProductsThunk, updateProductsCart } from '../../../Redux/Reducer/CreateAction.js';
 import getCart from '../../../Redux/API/getCart.js';

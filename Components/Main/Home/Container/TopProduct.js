@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import ElevatedView from 'react-native-elevated-view'
 import colors from '../../../../Design/Color';
 
-const url="http://192.168.1.33:5000/app/images/product/";
+const url="http://localhost:5000/app/images/product/";
 
 class TopProduct extends Component {
   render() {

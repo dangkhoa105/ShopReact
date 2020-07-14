@@ -1,4 +1,4 @@
-const URL = "http://192.168.1.33:5000/app/cart.php";
+const URL = "http://localhost:5000/app/cart.php";
 const sendOrder = (token, arrayDetail) => {
     
     return fetch (URL, {

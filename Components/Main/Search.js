@@ -12,7 +12,7 @@ import { Header } from 'native-base';
 import back from '../../Image/back_white.png';
 import colors from '../../Design/Color';
 
-const url = "http://192.168.1.33:5000/app/images/product/";
+const url = "http://localhost:5000/app/images/product/";
 
 class Search extends Component {
   constructor(props) {

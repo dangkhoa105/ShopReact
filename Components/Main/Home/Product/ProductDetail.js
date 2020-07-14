@@ -9,7 +9,7 @@ import saveCart from '../../../../Redux/API/saveCart.js';
 import ElevatedView from 'react-native-elevated-view'
 import colors from '../../../../Design/Color.js';
 
-const url="http://192.168.1.33:5000/app/images/product/";
+const url="http://localhost:5000/app/images/product/";
 
 class ProductDetail extends Component {
     goHome(){

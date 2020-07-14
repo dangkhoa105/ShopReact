@@ -1,4 +1,4 @@
-const URL = "http://192.168.1.33:5000/app/change_info.php";
+const URL = "http://localhost:5000/app/change_info.php";
 const changeInfoUser = (token, name, phone, address) => {
     // console.log(token, "TOKEN");
     // console.log(name, "NAME");

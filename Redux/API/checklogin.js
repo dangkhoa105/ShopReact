@@ -1,4 +1,4 @@
-const URL = "http://192.168.1.33:5000/app/check_login.php";
+const URL = "http://localhost:5000/app/check_login.php";
 const CheckLogin = (token) => {
     // console.log(token,'token');
     // console.log(typeof token,'typeof token');

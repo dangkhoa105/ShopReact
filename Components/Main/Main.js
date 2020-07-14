@@ -1,5 +1,5 @@
 import React,{ Component } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text,SafeAreaView } from 'react-native';
 import Header from './Header.js';
 import { TABBAR } from '../Route/Route.js';
 import getToken from '../../Redux/API/getToken';
@@ -33,14 +33,14 @@ class Main extends Component {
   render() {
     const { container, content } = styles
     return (
-      <View style={container}>
+      <SafeAreaView style={container}>
         <View style={container}>
           <Header onOpen={this.openMenu.bind(this)} goSear={this.goSearch.bind(this)} goCart={this.goCart.bind(this)}/>
           <View style={content}>
             <TABBAR></TABBAR>
           </View>
         </View>
-      </View>
+      </SafeAreaView>
     );
   }
 }
